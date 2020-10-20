@@ -1,0 +1,13 @@
+.vertical-menu {
+    a {
+        color: rgb(102, 102, 102);
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        font-family: Magda;
+
+        &.active{
+            color: rgb(0, 0, 0);
+        }
+    }
+}

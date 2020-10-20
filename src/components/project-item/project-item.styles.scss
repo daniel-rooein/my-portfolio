@@ -1,0 +1,25 @@
+.project-item_container{
+
+    & a {
+        background: #fff;
+        align-self: stretch;
+        border: 2px solid #ebeef1;
+        border-top: 4px solid #636a72;
+        border-radius: 6px;
+        transition: all .2s ease-out;
+        position: relative;
+        top: 0;
+        text-decoration: none;
+
+        & {
+            display: flex;
+            flex-direction: column;
+            max-width: 250px;
+        }
+    }
+    
+
+    & img{
+        width: 100%;
+    }
+}
