@@ -1,13 +1,36 @@
-.vertical-menu {
+.navbar {
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+    padding: 0 7rem 0 7rem;
+    font-size: 2rem;
+
+    &__logo {
+        height: 10rem;
+        width: 10rem;
+        fill: red;
+        background-color: var(--color-secondary);
+        & g {
+            fill: var(--color-primary);
+        }
+    }
+
+    li {
+        list-style: none;
+        padding-bottom: 2rem;
+    }
+
     a {
-        color: rgb(102, 102, 102);
+        color: var(--color-secondary);
         display: block;
-        padding: 12px;
         text-decoration: none;
         font-family: Magda;
 
         &.active{
-            color: rgb(0, 0, 0);
+            color: var(--color-secondary);
         }
     }
 }

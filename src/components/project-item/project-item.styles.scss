@@ -1,5 +1,10 @@
 .project-item_container{
 
+    padding-bottom: 32%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+  
+
     & a {
         background: #fff;
         align-self: stretch;
@@ -11,15 +16,9 @@
         top: 0;
         text-decoration: none;
 
-        & {
-            display: flex;
-            flex-direction: column;
-            max-width: 250px;
-        }
     }
-    
 
-    & img{
-        width: 100%;
+    .project-item_container_image img {
+      width: 300px;
     }
 }

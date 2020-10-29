@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
+import Footer from './components/footer/footer.component';
 
-import Navbar from './components/navbar/navbar.component';
+import Header from './components/header/header.component';
 import HomePage from './pages/home/homepage-component';
 
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <HomePage/>
+      <Header />
+      <HomePage />
+      <Footer/>
     </div>
   );
 }

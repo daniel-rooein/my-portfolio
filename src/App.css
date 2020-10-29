@@ -1,9 +1,25 @@
-@font-face {
-  font-family: 'Magda';
-  src: local('Magda'), url(./assets/vendor/fonts/MagdaRegular/MagdaRegular.ttf) format('opentype');
-}
+:root {
+  --color-primary: rgb(5, 15, 24);
+  --color-secondary: rgb(248, 244, 244);
+  --color-terdiary: #06f;
+  --width-large: 70vw; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
 body {
   margin: 0 auto;
-  width: 60%;
-}
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1.6;
+  background-color: var(--color-secondary); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth !important; }
