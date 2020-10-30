@@ -5,9 +5,9 @@ const ProjectItem = ({ imgUrl, title, description }) => {
     return (
 
         <div className="project-item_container">          
-            <div className="project-item_container_image">
+            <div className="project-item_container_image" style={{ backgroundImage: imgUrl }}>
                 {/* <img src={require(`"${imgUrl}"`)} alt=""/> */}
-                <img src={require("./../../assets/custom/images/juno.jpg")} alt=""/>
+                <img src={imgUrl}     alt="" />
             </div>
 
             <div className="project-item_container_title">

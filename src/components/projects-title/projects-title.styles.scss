@@ -1,13 +1,15 @@
 .projects-title_container{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 20px 0;
+    margin: 10rem 0 5rem 0;
+    align-items: center;
 
     & .projects-title_container_title{
-        font-size: x-large;
+        font-size: 5rem;
     }
 
     & .projects-title_container_description{
+        font-size: 2rem;
         width: 40%;
     }
 }

@@ -1,6 +1,6 @@
 .project-item_container{
 
-    padding-bottom: 32%; /* Same as width, sets height */
+    padding-bottom: 5rem; /* Same as width, sets height */
     margin-bottom: 2%; /* (100-32*3)/2 */
     position: relative;
   
@@ -19,6 +19,6 @@
     }
 
     .project-item_container_image img {
-      width: 300px;
+      width: 800px;
     }
 }

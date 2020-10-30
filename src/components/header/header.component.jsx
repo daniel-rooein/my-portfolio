@@ -3,6 +3,8 @@ import React from 'react';
 import './header.styles.scss';
 
 import Navbar from '../navbar/navbar.component';
+import { ReactComponent as LinkedInLogo } from './../../assets/vendor/icons/linkedin.svg';
+import { ReactComponent as GitHubLogo } from './../../assets/vendor/icons/github.svg';
 
 const Header = () => {
     return (
@@ -10,6 +12,10 @@ const Header = () => {
             <div className="header__container">
                 <Navbar />
                 <div className="intro">
+                    <div className="intro__logos-box">
+                        <LinkedInLogo className="intro__logo"/>
+                        <GitHubLogo className="intro__logo"/>
+                    </div>
                     <h1>
                         {'</>'}Daniel Rooein 
                     </h1>
@@ -20,19 +26,13 @@ const Header = () => {
                         <span className="intro__skill">angular</span>
                         <span className="intro__skill">react</span>
                     </h2>
-                    <a href="#about-me">
-                        <div class="intro__learn-more__container">
-                            <div class="intro__learn-more__container__center">
-                                <button class="intro__learn-more__container__center__btn">
-                                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                    </svg>
-                                    <span>learn more!</span>
-                                </button>
-                            </div>
-                        </div>
-                    </a> 
+                    <div>
+                        <a href="#about-me">
+                            <button className="intro__learn-more">
+                                Learn More!
+                            </button>
+                        </a> 
+                    </div>
                 </div>
             </div>
         </div>

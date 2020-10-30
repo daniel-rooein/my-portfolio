@@ -15,6 +15,13 @@
 .intro {
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+
+    :first-child{
+        align-self: flex-end;
+    }
 
     h1 {
         font-size: 4rem;
@@ -24,6 +31,21 @@
 
     a {
         transition: all 0.2s linear;
+    }
+
+    &__logos-box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &__logo {
+        height: 3rem;
+        width: 3rem;
+        //fill: var(--color-primary);
+        background-color: var(--color-secondary);
+        & g {
+            fill: var(--color-primary);
+        }
     }
 
     &__skills-box {
@@ -53,7 +75,7 @@
 
         &::before {
             content: '';
-            position: absolute;
+            //position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -68,7 +90,7 @@
         }
         &::after {
             content: '';
-            position: absolute;
+            //position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -85,63 +107,6 @@
         }
     }
 }
-
-.intro__learn-more__container {
-    width: 40rem;
-    height: 40rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__center {
-        width: 180px;
-        height: 60px;
-        position: absolute;
-
-        &__btn {
-            width: 180px;
-            height: 60px;
-            cursor: pointer;
-            background: transparent;
-            border: 1px solid var(--color-secondary);
-            outline: none;
-            transition: 0.5s ease-in-out;
-            text-transform: capitalize;
-
-            & svg {
-                position: absolute;
-                left: 0;
-                top: 0;
-                fill: none;
-                stroke: #fff;
-                stroke-dasharray: 150 480;
-                stroke-dashoffset: 150;
-                transition: 1s ease-in-out;
-                }
-    
-            &:hover {
-                transition: 0.5s ease-in-out;
-                background: var(--color-terdiary);
-            }
-    
-            &:hover svg {
-                stroke-dashoffset: -480;
-            }
-    
-            & span {
-                color: var(--color-secondary);
-                font-size: 18px;
-                font-weight: 100;
-            }
-        }
-    }
-}
-
-  
 
   
   
